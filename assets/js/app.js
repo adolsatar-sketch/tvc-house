@@ -242,6 +242,24 @@
     return el;
   }
 
+  function buildPricing(s){
+    const el = document.createElement("section");
+    el.className = "slide slide-pricing";
+    el.innerHTML =
+      '<div class="tex-bg"></div>' +
+      '<div class="pricing-ambient"></div>' +
+      '<div class="slide-inner">' +
+        '<div class="pricing-content">' +
+          '<div class="eyebrow" style="justify-content:center">' + esc(s.eyebrow) + '</div>' +
+          '<h2 class="slide-title">' + esc(s.title) + '</h2>' +
+          '<div class="price-figure" dir="ltr">' + esc(s.price) + '</div>' +
+          '<div class="cover-line"></div>' +
+          '<p class="pricing-desc">' + esc(s.desc) + '</p>' +
+        '</div>' +
+      '</div>';
+    return el;
+  }
+
   function buildEnd(s){
     const el = document.createElement("section");
     el.className = "slide slide-end";
@@ -267,6 +285,7 @@
       case "scene":     return buildScene(s, i);
       case "sound":     return buildSound(s);
       case "list":      return buildList(s);
+      case "pricing":   return buildPricing(s);
       case "end":       return buildEnd(s);
       default:          return document.createElement("section");
     }
