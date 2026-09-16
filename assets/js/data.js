@@ -10,7 +10,7 @@ const CHAPTERS = [
   { id: "reel2",      label: "الريل الثاني" },
   { id: "reel3",      label: "الريل الثالث" },
   { id: "production", label: "الإنتاج والتسليم" },
-  { id: "pricing",    label: "الاستثمار في الحملة" },
+  { id: "pricing",    label: "سعر الحملة" },
   { id: "end",        label: "الختام" }
 ];
 
@@ -627,7 +627,7 @@ scene({
 {
   type: "pricing",
   chapter: "pricing",
-  eyebrow: "الاستثمار في الحملة",
+  eyebrow: "سعر الحملة",
   title: "سعر الحملة الكامل",
   price: "$2,500",
   desc: "يشمل التخطيط الإبداعي، التحضير، الإنتاج، التصوير، والمونتاج النهائي وفق المعالجة المقدّمة."
